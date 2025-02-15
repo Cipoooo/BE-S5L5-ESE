@@ -1,6 +1,6 @@
 package com.example.ViaggiAzienda.enumeration;
 
-public enum stato_viaggio {
+public enum StatoViaggio {
 
     IN_PROGRAMMA, COMPLETATO
 
