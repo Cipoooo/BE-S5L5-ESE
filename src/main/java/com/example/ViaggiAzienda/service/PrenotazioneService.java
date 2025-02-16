@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -49,4 +50,17 @@ public class PrenotazioneService {
 
         return prenotazioneMapper.toDTO(prenotazione);
     }
+
+    public Prenotazione cercaPrenotazioneTramiteId(Long id){
+        return prenotazioneRepository.findById(id).orElseThrow(()-> new RuntimeException("Errore"));
+    }
+
+    public List<Prenotazione> preniTuttePrenotazioni(){
+        return prenotazioneRepository.findAll();
+    }
+
+    public void eliminaPrenotazione(Long id){
+        prenotazioneRepository.deleteById(id);
+    }
+
 }
