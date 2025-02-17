@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/dipendenti")
+@RequestMapping("/dipendenti")
 public class DipendenteController {
 
     @Autowired DipendenteService dipendenteService;

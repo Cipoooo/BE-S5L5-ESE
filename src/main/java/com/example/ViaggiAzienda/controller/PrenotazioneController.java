@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/prenotazioni")
+@RequestMapping("/prenotazioni")
 public class PrenotazioneController {
 
     @Autowired
